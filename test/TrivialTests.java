@@ -35,8 +35,8 @@ public class TrivialTests {
     public void al_menos_dos_jugadores(){
         Game.esJugable();
         Game juego = new Game();
-        juego.agregar("Maria");
-        // juego.agregar("Juan");
+        juego.agregar("Horacio");
+        juego.agregar("Gustabo");
         int expected = 2;
         int actual = Game.cuantosJugadores();
 
@@ -46,8 +46,17 @@ public class TrivialTests {
     }
 
     @Test
-    public void maximo_6_jugadores(){
+    public void maximo_seis_jugadores(){
         Game.esJugable();
+
+        Game juego = new Game();
+        juego.agregar("Horacio");
+        juego.agregar("Gustabo");
+        juego.agregar("Jack");
+        juego.agregar("Viktor");
+        juego.agregar("Ivanov");
+        juego.agregar("Yun");
+
         Assertions.assertEquals(6,
                 Game.cuantosJugadores());
 

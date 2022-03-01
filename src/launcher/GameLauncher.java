@@ -15,7 +15,7 @@ public class GameLauncher {
         juego.agregar("Maria");
        /* juego.agregar("Juan");
         juego.agregar("Antonio");
-        juego.agregar("")
+
 */
         Random rand = new Random();
 
