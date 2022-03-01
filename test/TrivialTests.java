@@ -50,6 +50,7 @@ public class TrivialTests {
         Game.esJugable();
 
         Game juego = new Game();
+        
         juego.agregar("Horacio");
         juego.agregar("Gustabo");
         juego.agregar("Jack");
