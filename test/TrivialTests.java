@@ -30,4 +30,27 @@ public class TrivialTests {
         //Assert
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    public void al_menos_dos_jugadores(){
+        Game.esJugable();
+        Game juego = new Game();
+        juego.agregar("Maria");
+        // juego.agregar("Juan");
+        int expected = 2;
+        int actual = Game.cuantosJugadores();
+
+        Assertions.assertEquals(expected, actual);
+
+
+    }
+
+    @Test
+    public void maximo_6_jugadores(){
+        Game.esJugable();
+        Assertions.assertEquals(6,
+                Game.cuantosJugadores());
+
+    }
 }
+
