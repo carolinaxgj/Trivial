@@ -50,14 +50,13 @@ public class TrivialTests {
         Game.esJugable();
 
         Game juego = new Game();
-        
+
         juego.agregar("Horacio");
         juego.agregar("Gustabo");
         juego.agregar("Jack");
         juego.agregar("Viktor");
         juego.agregar("Ivanov");
         juego.agregar("Yun");
-
         Assertions.assertEquals(6,
                 Game.cuantosJugadores());
 
