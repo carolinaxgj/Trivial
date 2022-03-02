@@ -126,7 +126,7 @@ public class TrivialTests {
     }
 
     @Test
-    public void preguntas_infinitas(){
+    public void no_quedar_sin_preguntas(){
         Game.esJugable();
         Game juego = new Game();
 

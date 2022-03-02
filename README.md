@@ -40,4 +40,10 @@ Creamos un test para simplificar la función de "fueRespuestaCorrecta"
 Simplificamos la funcion "fueRespuestaCorrecta" quitando el código duplicado y uniendolo en uno solo llamado "fue_respuestacorrecta".
 Creamos un test unitario "refactor_Respuesta_correcta".
 
+## Problema 7)
+
+Creamos un test para comprobar que no nos quedamos sin preguntas.
+Creamos un metodo llamado "probarPregunta" que nos ayudara a que no se quede el juego nunca sin preguntas.
+Creamos un test unitario "no_quedar_sin_preguntas".
+
 
