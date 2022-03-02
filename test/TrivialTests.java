@@ -123,7 +123,20 @@ public class TrivialTests {
 
         Assertions.assertEquals(expected, actual);
 
+    }
 
+    @Test
+    public void preguntas_infinitas(){
+        Game.esJugable();
+        Game juego = new Game();
+
+        juego.agregar("Horacio");
+        juego.agregar("Gustabo");
+
+        boolean expected = true;
+        boolean actual = juego.probarPregunta();
+
+        Assertions.assertEquals(expected, actual);
     }
 }
 

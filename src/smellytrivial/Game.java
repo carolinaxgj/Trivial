@@ -1,5 +1,6 @@
 package smellytrivial;
 
+import javax.management.ObjectName;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
@@ -180,4 +181,15 @@ public class Game {
         return enCasillaCastigo[0];
     }
 
+    public boolean probarPregunta(){
+        for (int i = 0; i <70; i++){
+            Object pregunta = preguntasCultura.removeFirst();
+            if ( pregunta == null){
+                return false;
+            }
+            System.out.println(pregunta);
+            preguntasCultura.addLast(pregunta);
+        }
+        return true;
+    }
 }
