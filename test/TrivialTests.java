@@ -85,7 +85,30 @@ public class TrivialTests {
     @Test
     public void ganador_sea_true(){
     Game.esJugable();
+    Game juego = new Game();
 
+    juego.agregar("Horacio");
+    juego.agregar("Gustabo");
+
+    juego.jugadorHaGanado();
+
+
+    }
+
+    @Test
+    public void pasar_siguiente_jugador(){
+        Game.esJugable();
+        Game juego = new Game();
+        juego.agregar("Horacio");
+        juego.agregar("Gustabo");
+
+        juego.fueRespuestaCorrecta();
+        juego.pasarSiguienteJugador();
+
+        int expected = 1;
+        int actual = juego.pasarSiguienteJugador();
+
+        Assertions.assertEquals(expected, actual);
     }
 }
 
