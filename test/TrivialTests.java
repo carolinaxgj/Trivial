@@ -110,5 +110,20 @@ public class TrivialTests {
 
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    public void refactor_Respuesta_correcta(){
+        Game.esJugable();
+        Game juego = new Game();
+        juego.agregar("Horacio");
+        juego.agregar("Gustabo");
+
+        boolean expected = true;
+        boolean actual = juego.fueRespuestaCorrecta();
+
+        Assertions.assertEquals(expected, actual);
+
+
+    }
 }
 
