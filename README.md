@@ -27,6 +27,9 @@ Creamos un test unitario "jugador_sale_de_la_carcel".
 
 ## Problema 4)
 
+Mediante un test, hacemos que en vez de noGanador = false sea ganador=true para finalizar el juego. 
+Modificamos el metodo "fuerespuestaCorrecta" y el metodo "jugadorHaGanado" para que sea ganador=true. De igual forma, hay que modificar el GameLauncher cambiando tambien todos los noGanador por Ganador.
+Creamos un test unitario "ganador_sea_true"
 
 ## Problema 5)
 
