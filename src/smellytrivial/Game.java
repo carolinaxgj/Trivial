@@ -58,8 +58,9 @@ public class Game {
         System.out.println("Ha sacado un " + puntosDado);
 
         if (enCasillaCastigo[jugadorActual]) {
-            if (puntosDado % 2 != 0) {
+            if (puntosDado % 2 != 0) { //debe ser impar
                 estaSaliendoDeLaCarcel = true;
+                enCasillaCastigo[jugadorActual] = false;
 
                 System.out.println(jugadores.get(jugadorActual) + " sale de la casilla de castigo");
                 posiciones[jugadorActual] = posiciones[jugadorActual] + puntosDado;
@@ -171,6 +172,15 @@ public class Game {
                 + jugadores.get(jugadorActual)
                 + " es "
                 + posiciones[jugadorActual];
+    }
+
+    public void meterJugadorCarcel(){
+        enCasillaCastigo[0] = true;
+    }
+
+    public boolean comprobarJugadorCarcel(){
+
+        return enCasillaCastigo[0];
     }
 
 }

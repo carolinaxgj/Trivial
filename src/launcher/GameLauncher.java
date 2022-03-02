@@ -13,10 +13,10 @@ public class GameLauncher {
         Game juego = new Game();
 
         juego.agregar("Maria");
-       /* juego.agregar("Juan");
+        juego.agregar("Juan");
         juego.agregar("Antonio");
 
-*/
+
         Random rand = new Random();
 
         do {

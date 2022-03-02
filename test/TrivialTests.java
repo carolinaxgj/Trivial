@@ -61,5 +61,31 @@ public class TrivialTests {
                 Game.cuantosJugadores());
 
     }
+
+    @Test
+    public void jugador_sale_de_la_carcel(){
+        Game.esJugable();
+        Game juego = new Game();
+
+        juego.agregar("Horacio");
+        juego.agregar("Gustabo");
+
+        juego.meterJugadorCarcel();
+        juego.tirarDado(3);
+
+        boolean expected = false;
+        boolean actual = juego.comprobarJugadorCarcel();
+
+        Assertions.assertEquals(expected, actual);
+
+
+
+    }
+
+    @Test
+    public void ganador_sea_true(){
+    Game.esJugable();
+
+    }
 }
 
