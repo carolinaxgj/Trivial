@@ -25,3 +25,13 @@ Creamos un test para probar que el jugador sale de la cárcel. Añadimos dos met
 Creamos los metodos "meterJugadorCarcel" y "comprobarJugadorCarcel".
 Creamos un test unitario "jugador_sale_de_la_carcel".
 
+## Problema 4)
+
+
+## Problema 5)
+
+Creamos un test para comprobar que hemos eliminado código repetido.. 
+Refactorizamos el código en un único método llamado "pasarSiguienteJugador"
+Creamos un test unitario "pasar_siguiente_jugador"
+
+
