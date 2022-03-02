@@ -19,3 +19,9 @@ Mediante un test, establecemos que el máximo de jugadores en una partida sean 6
 
 Creamos un test unitario "máximo_seis_jugadores"
 
+## Problema 3)
+
+Creamos un test para probar que el jugador sale de la cárcel. Añadimos dos metodos nuevos para poder comprobar esto y editamos un metodo que ya estaba.
+Creamos los metodos "meterJugadorCarcel" y "comprobarJugadorCarcel".
+Creamos un test unitario "jugador_sale_de_la_carcel".
+
