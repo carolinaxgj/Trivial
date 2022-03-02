@@ -90,7 +90,10 @@ public class TrivialTests {
     juego.agregar("Horacio");
     juego.agregar("Gustabo");
 
-    juego.jugadorHaGanado();
+    boolean expected = true;
+    boolean actual = juego.fueRespuestaCorrecta();
+
+    Assertions.assertEquals(expected, actual);
 
 
     }

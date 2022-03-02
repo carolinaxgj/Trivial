@@ -87,18 +87,6 @@ public class Game {
 
     }
 
-    private void hacerPregunta() {
-        if (categoriaActual() == "Cultura popular")
-            System.out.println(preguntasCultura.removeFirst());
-        if (categoriaActual() == "Ciencias")
-            System.out.println(preguntasCiencias.removeFirst());
-        if (categoriaActual() == "Deportes")
-            System.out.println(preguntasDeportes.removeFirst());
-        if (categoriaActual() == "Música")
-            System.out.println(preguntasMusica.removeFirst());
-    }
-
-
     private String categoriaActual() {
         if (posiciones[jugadorActual] == 0) return "Cultura popular";
         if (posiciones[jugadorActual] == 4) return "Cultura popular";
@@ -124,8 +112,8 @@ public class Game {
 
 
         } else {
-
-            return fue_respuestacorrecta();
+            pasarSiguienteJugador();
+            return true;
         }
     }
 
@@ -160,7 +148,7 @@ public class Game {
 
 
     public boolean jugadorHaGanado() {
-        return !(monederos[jugadorActual] == 6) ; //con 6 monedas gana.
+        return (monederos[jugadorActual] == 6) ; //con 6 monedas gana.
 
     }
 
@@ -191,5 +179,28 @@ public class Game {
             preguntasCultura.addLast(pregunta);
         }
         return true;
+    }
+
+    private void hacerPregunta(){
+        if ( categoriaActual() == "Cultura Popular"){
+            Object pregunta = preguntasCultura.removeFirst();
+            System.out.println(pregunta);
+            preguntasCultura.addLast(pregunta);
+        }
+        if ( categoriaActual() == "Ciencias"){
+            Object pregunta = preguntasCiencias.removeFirst();
+            System.out.println(pregunta);
+            preguntasCiencias.addLast(pregunta);
+        }
+        if ( categoriaActual() == "Deportes"){
+            Object pregunta = preguntasDeportes.removeFirst();
+            System.out.println(pregunta);
+            preguntasDeportes.addLast(pregunta);
+        }
+        if ( categoriaActual() == "Musica"){
+            Object pregunta = preguntasMusica.removeFirst();
+            System.out.println(pregunta);
+            preguntasMusica.addLast(pregunta);
+        }
     }
 }
