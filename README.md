@@ -30,8 +30,14 @@ Creamos un test unitario "jugador_sale_de_la_carcel".
 
 ## Problema 5)
 
-Creamos un test para comprobar que hemos eliminado código repetido.. 
-Refactorizamos el código en un único método llamado "pasarSiguienteJugador"
+Creamos un test para comprobar que hemos eliminado código repetido.
+Refactorizamos el código en un único método llamado "pasarSiguienteJugador".
 Creamos un test unitario "pasar_siguiente_jugador"
+
+## Problema 6)
+
+Creamos un test para simplificar la función de "fueRespuestaCorrecta"
+Simplificamos la funcion "fueRespuestaCorrecta" quitando el código duplicado y uniendolo en uno solo llamado "fue_respuestacorrecta".
+Creamos un test unitario "refactor_Respuesta_correcta".
 
 
